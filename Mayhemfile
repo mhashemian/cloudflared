@@ -19,7 +19,7 @@ cmds:
 
   # Command used to start the target, "@@" is the input file
   # (when "@@" is omitted Mayhem defaults to stdin inputs)
-    - cmd: /cloudflared
+  - cmd: /cloudflared
     timeout: 5.0
     network:
       timeout: 2.0
