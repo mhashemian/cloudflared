@@ -23,7 +23,7 @@ cmds:
     timeout: 5.0
     network:
       timeout: 2.0
-      client: False
+      client: true
       url: tcp://127.0.0.1:8080
     
     ## Uncomment to change default dir (/) from which the target is invoked
