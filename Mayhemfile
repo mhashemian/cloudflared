@@ -19,11 +19,11 @@ cmds:
 
   # Command used to start the target, "@@" is the input file
   # (when "@@" is omitted Mayhem defaults to stdin inputs)
-  - cmd: /cloudflared
+  - cmd: tunnel
     timeout: 5.0
     network:
       timeout: 2.0
-      client: true
+      client: false
       url: tcp://127.0.0.1:8080
     
     ## Uncomment to change default dir (/) from which the target is invoked
