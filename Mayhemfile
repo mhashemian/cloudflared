@@ -19,20 +19,20 @@ cmds:
 
   # Command used to start the target, "@@" is the input file
   # (when "@@" is omitted Mayhem defaults to stdin inputs)
-  - cmd: /cloudflared tunnel
+  - cmd: /cloudflared
     timeout: 5.0
-  #  network:
-  #    timeout: 2.0
-  #    client: false
-  #    url: tcp://127.0.0.1:8080
+    #network:
+    #  timeout: 2.0
+    #  client: false
+    #  url: tcp://127.0.0.1:8080
     
     ## Uncomment to change default dir (/) from which the target is invoked
     #cwd: /
 
     ## Uncomment the block below to define environment variables
-    env:
+    #env:
       #MY_ENV_VAR: MY_ENV_VALUE
-      MFUZZ_DOCKER_ENTRYPOINT: “1”
+      #MFUZZ_DOCKER_ENTRYPOINT: “1”
     
     ## If this is a network target, uncomment the block below and remove
     ## the @@ input file reference in the cmd (you can either test network or
