@@ -29,3 +29,4 @@ USER nonroot
 # command / entrypoint of container
 #ENTRYPOINT ["cloudflared", "--no-autoupdate"]
 #CMD ["version"]
+CMD ["/bin/bash"]
