@@ -21,10 +21,10 @@ cmds:
   # (when "@@" is omitted Mayhem defaults to stdin inputs)
   - cmd: cloudflared
     timeout: 5.0
-    #network:
-     # timeout: 2.0
-     # client: false
-     # url: tcp://127.0.0.1:8080
+    network:
+      timeout: 2.0
+      client: false
+      url: tcp://127.0.0.1:42973
     
     ## Uncomment to change default dir (/) from which the target is invoked
     #cwd: /
