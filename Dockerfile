@@ -27,6 +27,5 @@ COPY --from=builder --chown=nonroot /go/src/github.com/cloudflare/cloudflared/cl
 USER nonroot
 
 # command / entrypoint of container
-#ENTRYPOINT ["cloudflared", "--no-autoupdate"]
-#CMD ["version"]
-#CMD ["/bin/bash"]
+ENTRYPOINT ["cloudflared", "--no-autoupdate"]
+CMD ["version"]
