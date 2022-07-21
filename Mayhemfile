@@ -24,7 +24,7 @@ cmds:
     network:
       timeout: 2.0
       client: false
-      url: tcp://127.0.0.1:42973
+      url: tcp://127.0.0.1:5053
     
     ## Uncomment to change default dir (/) from which the target is invoked
     #cwd: /
